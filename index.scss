@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+$StrongCyan: hsl(172,
+67%,
+45%);
+$VeryDarkCyan: hsl(183,
+100%,
+15%);
+$DarkGrayishCyan: hsl(186,
+14%,
+43%);
+$DarkGrayishCyan2: hsl(184,
+14%,
+56%);
+$LightGrayishCyan: hsl(185,
+41%,
+84%);
+$LightGrayishCyan2: hsl(189,
+41%,
+97%);
+$White: hsl(0,
+0%,
+100%);
+body {
+    background-color: $LightGrayishCyan;
+}
+
+p {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+input[type=number] {
+    font-size: 24px;
+    color: $DarkGrayishCyan;
+    text-align: right;
+    border-radius: 4.5px;
+    background-color: $LightGrayishCyan2;
+    outline: none;
+    border: 3px solid $LightGrayishCyan2;
+    transition: 0.5s;
+    width: 280px;
+    padding: 10px;
+}
+
+input[type=number]:focus {
+    border: 3px solid $LightGrayishCyan !important;
+}
+
+.bill input {
+    background: url(./images/icon-dollar.svg) no-repeat scroll 7px 15px;
+    background-color: $LightGrayishCyan2;
+    color: black;
+}
+
+.calc {
+    margin: 0;
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: $White;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 15px;
+    .bill {
+        margin-top: 1rem;
+    }
+    h4 {
+        margin: 0;
+        color: $DarkGrayishCyan2;
+    }
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    .btn-d {
+        gap: 15px;
+        .btn {
+            font-weight: bolder;
+            font-size: 24px;
+            font-family: 'Space Mono';
+            color: $White;
+            border: none;
+            border-radius: 7px;
+            background-color: $VeryDarkCyan;
+            width: 140px;
+            padding: 15px;
+            margin: 5px;
+        }
+        .btn:active {
+            background-color: $StrongCyan;
+        }
+        #tip-percent-custom {
+            color: black;
+            font-size: 22px;
+            width: 100px;
+            height: 27px;
+            margin-left: 4px;
+            padding: 14px;
+            border-radius: 7px;
+        }
+    }
+}
+
+.people {
+    margin-top: 2rem;
+    input {
+        background: url(./images/icon-person.svg) no-repeat scroll 7px 15px;
+        color: $VeryDarkCyan;
+    }
+}
+
+.result {
+    flex: 1;
+    display: flex;
+    width: 96%;
+    background-color: $VeryDarkCyan;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 10px;
+    .pagal {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: white;
+        font-family: 'Space Mono';
+        .tip {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 140px;
+            margin-bottom: 5rem;
+            .tip-amount {
+                p {
+                    font-size: 10px;
+                }
+            }
+            .tip-per-p {
+                p {
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .tot-p {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 185px;
+            margin-bottom: 4rem;
+            .tot-p-person {
+                p {
+                    font-size: 10px;
+                }
+            }
+            .total {
+                p {
+                    margin-left: 0.6rem;
+                    margin-top: 0.7rem;
+                }
+            }
+        }
+    }
+    button {
+        padding: 15px;
+        background-color: $StrongCyan;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 845px) {
+    input[type=number] {
+        width: 400px;
+    }
+    body {
+        margin-top: 10rem;
+    }
+    .calc {
+        flex-direction: row;
+        width: 850px;
+        .result {
+            padding: 20px;
+            width: 500px;
+            button {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

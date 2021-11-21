@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Tip Calculator</title>
+
+</head>
+
+<body>
+    <div class="content">
+        <img src="./images/logo.svg" alt="">
+        <div class="calc">
+            <div>
+                <div class="bill">
+                    <h4>Bill</h4>
+                    <input type="number" name="money" id="money">
+                </div>
+                <div class="btn-container">
+                    <h4>Select Tip %</h4>
+                    <div class="btn-d">
+                        <button class="btn">5%</button>
+                        <button class="btn">10%</button>
+                        <button class="btn">15%</button>
+                        <button class="btn">25%</button>
+                        <button class="btn">50%</button>
+                        <input type="number" name="custome-tip" id='tip-percent-custom' placeholder="CUSTOM">
+                    </div>
+
+                </div>
+
+                <div class="people">
+                    <h4>Number of People</h4>
+                    <input type="number">
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="pagal">
+                    <div class="tip">
+                        <div class="tip-amount">
+                            <h3>Tip Amount</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="tip-per-p">
+                            <p>$0.00</p>
+                        </div>
+                    </div>
+                    <div class="tot-p">
+                        <div class="tot-p-person">
+                            <h3>Total</h3>
+                            <p>/ person</p>
+                        </div>
+                        <div class="total">
+                            <p>$0.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-result">RESET</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
