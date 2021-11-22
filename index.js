@@ -32,6 +32,7 @@ billDOM.addEventListener('input', (e) => {
 tipPercentBtn.forEach((e) => {
     e.style.transition = '0.5s';
     e.addEventListener('click', () => {
+        tipPercentDOM.value = '';
         tipPercentBtn.forEach((event) => {
             event.style.backgroundColor = 'hsl(183,100%,15%)';
         });
