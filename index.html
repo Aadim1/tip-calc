@@ -17,7 +17,7 @@
             <div>
                 <div class="bill">
                     <h4>Bill</h4>
-                    <input type="number" name="money" id="money">
+                    <input type="number" name="money" id="money" placeholder="0">
                 </div>
                 <div class="btn-container">
                     <h4>Select Tip %</h4>
@@ -34,7 +34,7 @@
 
                 <div class="people">
                     <h4>Number of People</h4>
-                    <input type="number">
+                    <input type="number" placeholder=1 id='numberOfPeople'>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@
                             <p>/ person</p>
                         </div>
                         <div class="tip-per-p">
-                            <p>$0.00</p>
+                            <p class="tip-amount-person">$0.00</p>
                         </div>
                     </div>
                     <div class="tot-p">
@@ -55,15 +55,15 @@
                             <p>/ person</p>
                         </div>
                         <div class="total">
-                            <p>$0.00</p>
+                            <p class="total-per-person">$0.00</p>
                         </div>
                     </div>
                 </div>
 
-                <button class="btn btn-result">RESET</button>
+                <button class="btn-result">RESET</button>
             </div>
         </div>
-
+        <script src="./index.js"></script>
     </div>
 </body>
 

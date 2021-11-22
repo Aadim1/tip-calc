@@ -22,6 +22,7 @@ $White: hsl(0,
 100%);
 body {
     background-color: $LightGrayishCyan;
+    transition: 0.5s;
 }
 
 p {
@@ -42,6 +43,7 @@ h3 {
 
 input[type=number] {
     font-size: 24px;
+    font-family: "Space Mono";
     color: $DarkGrayishCyan;
     text-align: right;
     border-radius: 4.5px;
@@ -142,7 +144,7 @@ input[type=number]:focus {
             flex: 1;
             display: flex;
             flex-direction: row;
-            gap: 140px;
+            gap: 85px;
             margin-bottom: 5rem;
             .tip-amount {
                 p {
@@ -151,6 +153,7 @@ input[type=number]:focus {
             }
             .tip-per-p {
                 p {
+                    font-size: 20px;
                     margin-top: 1rem;
                 }
             }
@@ -159,7 +162,7 @@ input[type=number]:focus {
             flex: 1;
             display: flex;
             flex-direction: row;
-            gap: 185px;
+            gap: 135px;
             margin-bottom: 4rem;
             .tot-p-person {
                 p {
@@ -168,6 +171,7 @@ input[type=number]:focus {
             }
             .total {
                 p {
+                    font-size: 20px;
                     margin-left: 0.6rem;
                     margin-top: 0.7rem;
                 }
@@ -176,7 +180,9 @@ input[type=number]:focus {
     }
     button {
         padding: 15px;
-        background-color: $StrongCyan;
+        font-size: 18px;
+        color: $DarkGrayishCyan2;
+        background-color: $DarkGrayishCyan;
         border: none;
     }
 }
@@ -190,12 +196,29 @@ input[type=number]:focus {
     }
     .calc {
         flex-direction: row;
-        width: 850px;
+        width: 900px;
         .result {
             padding: 20px;
-            width: 500px;
+            min-width: 350px;
+            max-width: 4000px;
             button {
                 margin-top: 3rem;
+            }
+            .pagal {
+                .tip {
+                    .tip-per-p {
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .tot-p {
+                    .total {
+                        p {
+                            font-size: 20px;
+                        }
+                    }
+                }
             }
         }
     }

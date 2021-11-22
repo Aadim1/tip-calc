@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 body {
-  background-color: #c5e4e7; }
+  background-color: #c5e4e7;
+  transition: 0.5s; }
 
 p {
   margin: 0; }
@@ -17,6 +18,7 @@ h3 {
 
 input[type=number] {
   font-size: 24px;
+  font-family: "Space Mono";
   color: #5e7a7d;
   text-align: right;
   border-radius: 4.5px;
@@ -104,26 +106,30 @@ input[type=number]:focus {
       flex: 1;
       display: flex;
       flex-direction: row;
-      gap: 140px;
+      gap: 85px;
       margin-bottom: 5rem; }
       .result .pagal .tip .tip-amount p {
         font-size: 10px; }
       .result .pagal .tip .tip-per-p p {
+        font-size: 20px;
         margin-top: 1rem; }
     .result .pagal .tot-p {
       flex: 1;
       display: flex;
       flex-direction: row;
-      gap: 185px;
+      gap: 135px;
       margin-bottom: 4rem; }
       .result .pagal .tot-p .tot-p-person p {
         font-size: 10px; }
       .result .pagal .tot-p .total p {
+        font-size: 20px;
         margin-left: 0.6rem;
         margin-top: 0.7rem; }
   .result button {
     padding: 15px;
-    background-color: #26c0ab;
+    font-size: 18px;
+    color: #7f9c9f;
+    background-color: #5e7a7d;
     border: none; }
 
 @media screen and (min-width: 845px) {
@@ -135,12 +141,17 @@ input[type=number]:focus {
 
   .calc {
     flex-direction: row;
-    width: 850px; }
+    width: 900px; }
     .calc .result {
       padding: 20px;
-      width: 500px; }
+      min-width: 350px;
+      max-width: 4000px; }
       .calc .result button {
-        margin-top: 3rem; } }
+        margin-top: 3rem; }
+      .calc .result .pagal .tip .tip-per-p p {
+        font-size: 20px; }
+      .calc .result .pagal .tot-p .total p {
+        font-size: 20px; } }
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
